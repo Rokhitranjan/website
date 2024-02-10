@@ -9,16 +9,33 @@
             font-family: 'Arial', sans-serif;
             text-align: center;
             background-color: #f7f7f7;
-            margin: 100px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
+
         h1 {
             color: #000000;
+            font-size: 2em;
+            margin-bottom: 20px;
         }
+
         button {
-            padding: 10px 20px;
-            font-size: 16px;
-            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #ff4181;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff2366;
         }
     </style>
 </head>
