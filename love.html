@@ -41,7 +41,7 @@
 
         p {
             color: #000000;
-            font-size: 46px;
+            font-size: 16px; /* Adjusted font size for better readability on mobile */
             position: absolute;
             top: 50%;
             left: 50%;
@@ -52,70 +52,30 @@
         .heart {
             position: absolute;
             color: #a40138;
-            font-size: 36px;
+            font-size: 18px; /* Adjusted font size for better visibility on mobile */
             animation: heartbeat 1s infinite;
-        }
-
-        @keyframes slideIn {
-            from {
-                transform: translateY(-50px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes heartbeat {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.2);
-            }
         }
 
         .love-quote {
             background-color: #fff;
-            border: 20px solid #ccc;
+            border: 10px solid #ccc; /* Adjusted border size for better appearance on mobile */
             border-radius: 8px;
-            padding: 20px;
-            max-width: 300px;
+            padding: 10px; /* Adjusted padding for better spacing on mobile */
+            max-width: 200px; /* Adjusted max-width for better appearance on mobile */
             width: 100%;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px;
+            margin: 10px; /* Adjusted margin for better spacing on mobile */
         }
 
-        .top-left {
+        .top-left, .top-right, .bottom-left, .bottom-right {
             position: absolute;
-            top: 0;
-            left: 0;
+            width: 50%;
         }
 
-        .top-right {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-
-        .bottom-left {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
-
-        .bottom-right {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-        }
-
-        p {
-            margin: 0;
-            font-size: 16px;
-            line-height: 1.6;
-        }
+        .top-left { top: 0; left: 0; }
+        .top-right { top: 0; right: 0; }
+        .bottom-left { bottom: 0; left: 0; }
+        .bottom-right { bottom: 0; right: 0; }
 
         .love-quote p {
             opacity: 0;
@@ -131,22 +91,6 @@
             }
         }
 
-        img {
-            position: absolute;
-            height: 200px;
-            z-index: 1;
-        }
-
-        .gif-left {
-            left: 5%;
-            top: 30%;
-        }
-
-        .gif-right {
-            right: 5%;
-            top: 30%;
-        }
-
         /* Social Media Links */
         .social-links {
             position: absolute;
@@ -154,19 +98,15 @@
             left: 50%;
             transform: translateX(-50%);
             display: flex;
-            gap: 20px;
+            gap: 10px; /* Adjusted gap for better spacing on mobile */
             z-index: 2;
         }
 
         .social-links a {
             color: #000000;
-            font-size: 24px;
+            font-size: 14px; /* Adjusted font size for better readability on mobile */
             text-decoration: none;
             transition: color 0.3s ease;
-        }
-
-        .social-links a:hover {
-            color: #000000;
         }
     </style>
 </head>
