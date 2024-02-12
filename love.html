@@ -47,6 +47,8 @@
             left: 50%;
             transform: translate(-50%, -50%);
             animation: slideIn 2s ease-out;
+            max-width: 90%; /* Adjusted max-width for better appearance on mobile */
+            text-align: center; /* Center-align text on mobile */
         }
 
         .heart {
@@ -61,34 +63,26 @@
             border: 10px solid #ccc; /* Adjusted border size for better appearance on mobile */
             border-radius: 8px;
             padding: 10px; /* Adjusted padding for better spacing on mobile */
-            max-width: 200px; /* Adjusted max-width for better appearance on mobile */
+            max-width: 90%; /* Adjusted max-width for better appearance on mobile */
             width: 100%;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin: 10px; /* Adjusted margin for better spacing on mobile */
+            text-align: center; /* Center-align text on mobile */
         }
 
         .top-left, .top-right, .bottom-left, .bottom-right {
             position: absolute;
-            width: 50%;
+            width: 90%; /* Adjusted width for better appearance on mobile */
         }
 
-        .top-left { top: 0; left: 0; }
-        .top-right { top: 0; right: 0; }
-        .bottom-left { bottom: 0; left: 0; }
-        .bottom-right { bottom: 0; right: 0; }
+        .top-left { top: 5%; left: 5%; }
+        .top-right { top: 5%; right: 5%; }
+        .bottom-left { bottom: 5%; left: 5%; }
+        .bottom-right { bottom: 5%; right: 5%; }
 
         .love-quote p {
             opacity: 0;
             animation: fadeIn 1s ease-out forwards;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
         }
 
         /* Social Media Links */
@@ -98,6 +92,7 @@
             left: 50%;
             transform: translateX(-50%);
             display: flex;
+            flex-wrap: wrap; /* Allow links to wrap on smaller screens */
             gap: 10px; /* Adjusted gap for better spacing on mobile */
             z-index: 2;
         }
@@ -131,52 +126,12 @@
         Ennai vitu sendru vidathe en kanmaniye, Nee illai enral en uyir enidam illai en kanmaniye
         Unnai vitu oru nodi vilaginalum oru yugam Pol athai unargiren</p>
 
-    <div class="love-quote top-left">
-        <p>*********************************************
-            * ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥                       *
-            * ♥  I would rather spend one lifetime with  *
-            * ♥  you than face all the ages of this       *
-            * ♥           world without you              *
-            * ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥                      *
-        </p>
-    </div>
-
-    <div class="love-quote top-right">
-        <p>********************************************
-            * ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥                       *
-            * ♥  You taught me the real meaning of love.  *
-            * ♥        One look at your face sets         *
-            * ♥          my world straight!              *
-            * ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥                      *
-        </p>
-    </div>
-
-    <div class="love-quote bottom-left">
-        <p>*****************************************
-            * ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥                   *
-            * ♥ You’re the only thing that exists in  *
-            * ♥  my world. Everything I do is just      *
-            * ♥      to see a smile on your face.        *
-            * ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥                      *
-        </p>
-    </div>
-
-    <div class="love-quote bottom-right">
-        <p>****************************************
-            * ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥                      *
-            * ♥           You are my today              *
-            * ♥                  and                     *
-            * ♥          all of my tomorrows.           *
-            * ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥                      *
-        </p>
-    </div>
+ 
 
     <!-- Heart animations -->
     <div class="heart" style="top: 30%; left: 30%;">&#10084;</div>
     <div class="heart" style="top: 70%; left: 70%;">&#10084;</div>
-    <img class="gif-left" src="https://media.tenor.com/kl_HHAGP2X8AAAAi/bunny-i-love-you.gif" alt="Left GIF">
-    <img class="gif-right" src="https://media.tenor.com/AIpN-WzvXi8AAAAi/love.gif" alt="Right GIF">
-
+    
     <!-- Social Media Links -->
     <div class="social-links">
         <a href="https://www.instagram.com/rokhit.ranjan" target="_blank">&#128247; Instagram</a>
