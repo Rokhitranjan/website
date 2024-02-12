@@ -43,7 +43,7 @@
             color: #FFFFFF; 
             font-size: 16px;
             position: absolute;
-            top: 50%;
+            top: 70%;  /* Adjust the top value as needed */
             left: 50%;
             transform: translate(-50%, -50%);
             animation: slideIn 2s ease-out;
@@ -104,9 +104,44 @@
             color: #FFFFFF;
             font-size: 14px;
             position: absolute;
-            top: 65%; 
+            top: 80%;  /* Adjust the top value as needed */
             left: 50%;
             transform: translateX(-50%);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                color: #FFFFFF;
+            }
+            50% {
+                color: #FFFF00; /* Shimmering color */
+            }
+            100% {
+                color: #FFFFFF;
+            }
+        }
+
+        .contact-text1 {
+            color: #FFFFFF;
+            font-size: 14px;
+            position: absolute;
+            top: 75%; 
+            left: 50%;
+            transform: translateX(-50%);
+            animation: shimmer1 2s infinite;
+        }
+
+        @keyframes shimmer1 {
+            0% {
+                color: #FFFFFF;
+            }
+            50% {
+                color: #a30707; /* Shimmering color */
+            }
+            100% {
+                color: #FFFFFF;
+            }
         }
     </style>
 </head>
@@ -124,7 +159,7 @@
         Your browser does not support the audio element.
     </audio>
 
-    <p>&#10084;unnai partha nal muthal nan nanaga illai, un viligalai kandavudan En viligal enidam illai
+    <p class="contact-text1">&#10084;unnai partha nal muthal nan nanaga illai, un viligalai kandavudan En viligal enidam illai
         kadhal varuvathu sollikondu varuvathu illai en kanmaniye vanthuvital athu elithil povathillai en kanmaniye 
         unaai parpatharku athikalaiyil suriyan kuda odode varugiran en kanmaniyee 
         unnai parpatharku en irundu kangal pothathu en kanmaniye 
@@ -138,11 +173,7 @@
         <a href="https://www.snapchat.com/add/unknown_u7509" target="_blank">
             <img class="snapchat-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Snapcode_barcode.svg/640px-Snapcode_barcode.svg.png" alt="Snapchat Logo">
         </a>
-        <p class="contact-text">
-
-
-            
-            Contact me on here👆</p>
+        <p class="contact-text">Contact me on here👇</p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
