@@ -53,9 +53,10 @@
 
         audio {
             position: absolute;
-            bottom: 5%; /* Moved audio play button down */
+            bottom: 2%; /* Moved audio play button down */
             left: 50%;
             transform: translateX(-50%);
+            width: 40%; /* Reduced audio player size */
         }
 
         .heart {
@@ -65,23 +66,6 @@
             animation: heartbeat 1s infinite;
         }
 
-        .love-quote {
-            background-color: #fff;
-            border: 10px solid #ccc;
-            border-radius: 8px;
-            padding: 10px;
-            max-width: 90%;
-            width: 100%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-            text-align: center;
-        }
-
-        .love-quote p {
-            opacity: 0;
-            animation: fadeIn 1s ease-out forwards;
-        }
-
         /* Social Media Links */
         .social-links {
             position: absolute;
@@ -89,7 +73,6 @@
             left: 50%;
             transform: translateX(-50%);
             display: flex;
-            flex-wrap: wrap;
             gap: 10px;
             z-index: 2;
         }
@@ -99,6 +82,20 @@
             font-size: 14px;
             text-decoration: none;
             transition: color 0.3s ease;
+        }
+
+        .social-links img {
+            width: 30px; /* Adjusted Instagram and Snapchat logo size */
+            height: 30px;
+            border-radius: 50%; /* Rounded logo */
+        }
+
+        .instagram-logo {
+            width: 40px; /* Adjusted Instagram logo size */
+        }
+
+        .snapchat-logo {
+            width: 30px; /* Adjusted Snapchat logo size */
         }
     </style>
 </head>
@@ -124,13 +121,17 @@
         Unnai vitu oru nodi vilaginalum oru yugam Pol athai unargiren</p>
 
     <!-- Heart animations -->
-    <div class="heart" style="top: 30%; left: 30%;">&#10084;</div>
-    <div class="heart" style="top: 70%; left: 70%;">&#10084;</div>
+    <div class="heart" style="top: 20%; left: 15%;">&#10084;</div>
+    <div class="heart" style="top: 80%; left: 15%;">&#10084;</div>
 
     <!-- Social Media Links -->
     <div class="social-links">
-        <a href="https://www.instagram.com/rokhit.ranjan" target="_blank">&#128247; Instagram</a>
-        <a href="https://www.snapchat.com/add/unknown_u7509" target="_blank">&#128100; Snapchat</a>
+        <a href="https://www.instagram.com/rokhit.ranjan" target="_blank">
+            <img class="instagram-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt="Instagram Logo">
+        </a>
+        <a href="https://www.snapchat.com/add/unknown_u7509" target="_blank">
+            <img class="snapchat-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Font_Awesome_5_brands_snapchat-square.svg/800px-Font_Awesome_5_brands_snapchat-square.svg.png" alt="Snapchat Logo">
+        </a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
