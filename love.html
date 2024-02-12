@@ -14,9 +14,9 @@
 
         h1 {
             color: #FF0000;
-            font-size: 3em;
+            font-size: 2em; /* Reduced font size for h1 tag */
             position: absolute;
-            bottom: 10%;
+            top: 5%; /* Moved h1 tag to the top */
             left: 50%;
             transform: translateX(-50%);
             z-index: 2;
@@ -40,45 +40,42 @@
         }
 
         p {
-            color: #000000;
-            font-size: 16px; /* Adjusted font size for better readability on mobile */
+            color: #FFFFFF; /* Changed para font color to white */
+            font-size: 16px;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             animation: slideIn 2s ease-out;
-            max-width: 90%; /* Adjusted max-width for better appearance on mobile */
-            text-align: center; /* Center-align text on mobile */
+            max-width: 90%;
+            text-align: center;
+        }
+
+        audio {
+            position: absolute;
+            bottom: 5%; /* Moved audio play button down */
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .heart {
             position: absolute;
             color: #a40138;
-            font-size: 18px; /* Adjusted font size for better visibility on mobile */
+            font-size: 18px;
             animation: heartbeat 1s infinite;
         }
 
         .love-quote {
             background-color: #fff;
-            border: 10px solid #ccc; /* Adjusted border size for better appearance on mobile */
+            border: 10px solid #ccc;
             border-radius: 8px;
-            padding: 10px; /* Adjusted padding for better spacing on mobile */
-            max-width: 90%; /* Adjusted max-width for better appearance on mobile */
+            padding: 10px;
+            max-width: 90%;
             width: 100%;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 10px; /* Adjusted margin for better spacing on mobile */
-            text-align: center; /* Center-align text on mobile */
+            margin: 10px;
+            text-align: center;
         }
-
-        .top-left, .top-right, .bottom-left, .bottom-right {
-            position: absolute;
-            width: 90%; /* Adjusted width for better appearance on mobile */
-        }
-
-        .top-left { top: 5%; left: 5%; }
-        .top-right { top: 5%; right: 5%; }
-        .bottom-left { bottom: 5%; left: 5%; }
-        .bottom-right { bottom: 5%; right: 5%; }
 
         .love-quote p {
             opacity: 0;
@@ -92,32 +89,32 @@
             left: 50%;
             transform: translateX(-50%);
             display: flex;
-            flex-wrap: wrap; /* Allow links to wrap on smaller screens */
-            gap: 10px; /* Adjusted gap for better spacing on mobile */
+            flex-wrap: wrap;
+            gap: 10px;
             z-index: 2;
         }
 
         .social-links a {
             color: #000000;
-            font-size: 14px; /* Adjusted font size for better readability on mobile */
+            font-size: 14px;
             text-decoration: none;
             transition: color 0.3s ease;
         }
     </style>
 </head>
 <body>
-    <audio controls autoplay muted>
-        <source src="1.mp3" type="audio/mpeg">
-        <source src="1.flac" type="audio/flac">
-        Your browser does not support the audio element.
-    </audio>
-
     <h1 class="animate__animated animate__bounce wow">I Love You &#10084;</h1>
 
     <video autoplay muted loop playsinline>
         <source src="C:\Users\rokhi\Desktop\love\2.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+
+    <audio controls autoplay muted>
+        <source src="1.mp3" type="audio/mpeg">
+        <source src="1.flac" type="audio/flac">
+        Your browser does not support the audio element.
+    </audio>
 
     <p>unnai partha nal muthal nan nanaga illai, un viligalai kandavudan En viligal enidam illai
         kadhal varuvathu sollikondu varuvathu illai en kanmaniye vanthuvital athu elithil povathillai en kanmaniye 
@@ -126,12 +123,10 @@
         Ennai vitu sendru vidathe en kanmaniye, Nee illai enral en uyir enidam illai en kanmaniye
         Unnai vitu oru nodi vilaginalum oru yugam Pol athai unargiren</p>
 
- 
-
     <!-- Heart animations -->
     <div class="heart" style="top: 30%; left: 30%;">&#10084;</div>
     <div class="heart" style="top: 70%; left: 70%;">&#10084;</div>
-    
+
     <!-- Social Media Links -->
     <div class="social-links">
         <a href="https://www.instagram.com/rokhit.ranjan" target="_blank">&#128247; Instagram</a>
